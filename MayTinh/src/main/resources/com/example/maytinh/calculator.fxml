@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.maytinh.Calculator"
+            prefHeight="400.0" prefWidth="600.0">
+    <HBox alignment="CENTER">
+        <Label text="Nhap so a" alignment="CENTER"/>
+        <TextField fx:id="firstNum" alignment="CENTER"/>
+    </HBox>
+    <HBox alignment="CENTER">
+        <Label text="Nhap so b" alignment="CENTER"/>
+        <TextField fx:id="secondNum" alignment="CENTER"/>
+    </HBox>
+
+    <HBox alignment="CENTER">
+        <Button onAction="#add" text="+" alignment="CENTER"/>
+        <Button onAction="#sub" text="-" alignment="CENTER"/>
+        <Button onAction="#mul" text="*" alignment="CENTER"/>
+        <Button onAction="#div" text="/" alignment="CENTER"/>
+    </HBox>
+
+</VBox>
